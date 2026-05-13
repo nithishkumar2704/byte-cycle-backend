@@ -1,4 +1,4 @@
-# 🍱 Byte Cycle — Food Donor Service Platform Backend
+# Byte Cycle — Food Donor Service Platform Backend
 
 > Connecting food donors with recipients to eliminate urban food waste.
 
@@ -11,22 +11,22 @@
 
 ---
 
-## 📖 Project Overview
+## Project Overview
 
 **Byte Cycle** is a production-grade RESTful backend service that bridges the gap between food donors and recipients. Donors can list surplus food, and receivers can browse, search, and request donations — all secured with JWT-based authentication and role-based access control.
 
 ---
 
-## ✨ Features
+##  Features
 
-### 🤝 Donor
+###  Donor
 - Register & login with JWT
 - Create, update, and delete food donation listings
 - View and manage all their donations
 - Mark donations as completed or cancel them
 - View and respond to receiver requests (approve / reject / complete)
 
-### 🙋 Receiver
+###  Receiver
 - Register & login with JWT
 - Browse all available food donations
 - Search donations by city / location
@@ -34,7 +34,7 @@
 - View full request history
 - Cancel pending requests
 
-### 🌍 General / Public
+###  General / Public
 - Public donation browsing without login
 - Location-based search
 - Full donation status lifecycle management
@@ -43,7 +43,7 @@
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -59,7 +59,7 @@
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 byte-cycle-backend/
@@ -130,7 +130,7 @@ byte-cycle-backend/
 
 ---
 
-## ⚙️ Installation & Setup
+##  Installation & Setup
 
 ### Prerequisites
 
@@ -193,11 +193,11 @@ The server starts at: `http://localhost:8080`
 
 ---
 
-## 🔗 API Endpoints
+##  API Endpoints
 
 ### Base URL: `http://localhost:8080/api`
 
-### 🔐 Authentication (Public)
+###  Authentication (Public)
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -237,7 +237,7 @@ The server starts at: `http://localhost:8080`
 
 ---
 
-### 🤝 Donor Endpoints (Requires `ROLE_DONOR` + Bearer Token)
+###  Donor Endpoints (Requires `ROLE_DONOR` + Bearer Token)
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -270,7 +270,7 @@ The server starts at: `http://localhost:8080`
 
 ---
 
-### 🙋 Receiver Endpoints (Requires `ROLE_RECEIVER` + Bearer Token)
+###  Receiver Endpoints (Requires `ROLE_RECEIVER` + Bearer Token)
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -288,7 +288,7 @@ GET /receiver/donations/search?city=Chennai&status=AVAILABLE&page=0&size=10
 
 ---
 
-### 🌍 Public Endpoints (No Authentication)
+###  Public Endpoints (No Authentication)
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -298,7 +298,7 @@ GET /receiver/donations/search?city=Chennai&status=AVAILABLE&page=0&size=10
 
 ---
 
-## 📊 Database Schema
+##  Database Schema
 
 ```
 users ──< donations ──< requests >── users
@@ -311,7 +311,7 @@ users ──< donations ──< requests >── users
 
 ---
 
-## 📋 Donation & Request Status Flow
+##  Donation & Request Status Flow
 
 **Donation Status:**
 ```
@@ -329,7 +329,7 @@ PENDING → APPROVED → COMPLETED
 
 ---
 
-## 🔑 Authentication
+##  Authentication
 
 All protected endpoints require the `Authorization` header:
 
@@ -341,7 +341,7 @@ JWT tokens expire after **24 hours** (configurable in `application.properties`).
 
 ---
 
-## 📚 Swagger UI
+##  Swagger UI
 
 Access the interactive API documentation at:
 
@@ -355,7 +355,7 @@ http://localhost:8080/api/swagger-ui.html
 
 ---
 
-## ▶️ Maven Commands
+##  Maven Commands
 
 ```bash
 # Clean build (skip tests)
@@ -376,7 +376,7 @@ java -jar target/byte-cycle-backend-1.0.0.jar
 
 ---
 
-## 🚀 GitHub Push Commands
+##  GitHub Push Commands
 
 ```bash
 git init
@@ -389,7 +389,7 @@ git push -u origin main
 
 ---
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 
 - [ ] Email notifications on request approval/rejection
 - [ ] Real-time notifications using WebSocket
@@ -406,7 +406,7 @@ git push -u origin main
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/your-feature`
@@ -416,7 +416,7 @@ git push -u origin main
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
